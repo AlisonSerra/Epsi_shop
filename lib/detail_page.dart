@@ -24,6 +24,8 @@ class DetailPage extends StatelessWidget {
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headline5,
           ),
+          Text("Note du produits : ${product.note.toString()}"),
+          product.ratting(),
           Padding(padding:
             const EdgeInsets.all(8.0),
             child: Text("Description",style: Theme.of(context).textTheme.headline5),
