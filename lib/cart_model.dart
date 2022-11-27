@@ -13,4 +13,11 @@ class CartModel extends ChangeNotifier{
   }
   getProducts() => _lsProducts;
   getCount() => _lsProducts.length;
+  getSum(){
+    num sum = 0;
+    for (var product in _lsProducts) {
+      sum += product.prix;
+    }
+    return sum;
+  }
 }
